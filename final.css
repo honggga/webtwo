@@ -125,7 +125,10 @@ nav {
     background-image: linear-gradient(#000000, #00000017), url(cat.jpg);
     background-size: cover; background-position: center;
     background-attachment: fixed;
-    
+    /* background-attachment: fixed;는 배경 이미지를 고정시킨다.
+    linear-gradient은 배경에 선형 그라데이션을 적용한다.
+    background-position은 배경 이미지의 위치를 설정한다. */
+
     display: flex; flex-direction: column; justify-content: center; align-items: center;
     padding: 0 24px; position: relative; text-align: center;
 }
@@ -149,15 +152,21 @@ nav {
     letter-spacing: 0.06em; border-radius: var(--radius);
     transition: background 0.25s, color 0.25s, outline 0.25s;
 }
+/* display: inline-block;은 요소를 인라인 블록으로 만든다.
+인라인 블록이란 인라인 요소와 블록 요소의 특성을 모두 가진다.
+인라인 요소란 줄 안에서만 배치되며, 너비와 높이를 설정할 수 없다. */
 .hero-btn:hover {
     background: transparent; color: var(--white); outline: 2px solid var(--white);
 }
+/* background: transparent;는 배경을 투명하게 만든다. */
 .scroll-hint {
     position: absolute; bottom: 36px; left: 50%; transform: translateX(-50%);
     display: flex; flex-direction: column; align-items: center;
     gap: 10px; color: var(--white); font-size: 0.68rem; letter-spacing: 0.147em;
     animation: nudge 2.2s infinite;
 }
+/* position: absolute;는 요소를 절대 위치로 설정한다. position: relative;는 요소를 상대 위치로 설정한다.
+animation: nudge 2.2s infinite;는 nudge 애니메이션을 적용한다. nudge는 살짝 이동시키기. infinite는 반복을 의미한다.  */
 .scroll-hint::after {
     content: ''; width: 1px; height: 44px; background: var(--white);
 }

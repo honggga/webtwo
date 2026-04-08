@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko ">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>final</title>
+    <link rel="stylesheet" href="./final.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-inner">
+            <a href="#" class="nav-logo"> sang</a>
+
+            <ul class="menu">
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Work</a>
+                </li>
+                <li>
+                    <a href="#">Gallery</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+
+            <button class="hamburger" id="navBtn" aria-label="메뉴">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <ul class="mobile-menu" id="mobileMenu">
+            <li><a href="#" onclick="closeMenu()">About</a></li>
+            <li><a href="#" onclick="closeMenu()">Work</a></li>
+            <li><a href="#" onclick="closeMenu()">Gallery</a></li>
+            <li><a href="#" onclick="closeMenu()">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- hero -->
+    <section class="hero">
+        <div class="hero-tag">subtitle</div>
+        <h1 class="hero-title">안녕하세요<br>홍성준 입니다.</h1>
+        <p class="hero-sub">
+            너무 졸립니다. <br>그래도 잠을 깨야죠
+        </p>
+        <a href="#" class="hero-btn">포트폴리오 보기</a>
+        <div class="scroll-hint">SCROLL</div>
+    </section>
+
+    <!-- about -->
+    <section class="section" id="about">
+        <div class="about-inner">
+            <img src="cat.jpg" alt="프로필사진">
+
+            <div>
+                <div class="section-tag">About Me</div>
+                <h2 class="section-title">디자인과 코딩도 열심히</h2>
+                <p class="section-desc">
+                    조리를 전공 하였지만
+                    어쩌다 보니 웹디자인과
+                    코딩을 하고 있습니다.
+                </p>
+
+                <div class="skill-list">
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">HTML</span>
+                </div>
+
+                <a href="#" class="btn">다운로드</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- work -->
+    <section class="section" id="wrok">
+        <div class="work-head">
+            <div class="section-tag">
+                text
+            </div>
+            <h2 class="section-title">title</h2>
+            <p class="section-desc">직접 만들었어요</p>
+        </div>
+
+        <div class="card-grid">
+            <div class="card">
+                <img src="cat.jpg" alt="cardimg">
+                <div class="card-body">
+                    <div class="card-cat">Web Design</div>
+                    <h3 class="card-title">po-site</h3>
+                    <p class="card-desc">desc</p>
+                    <a href="#" class="card-link">자세히 보기 -></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="cat.jpg" alt="cardimg">
+                <div class="card-body">
+                    <div class="card-cat">Web Design</div>
+                    <h3 class="card-title">po-site</h3>
+                    <p class="card-desc">desc</p>
+                    <a href="#" class="card-link">자세히 보기 -></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="cat.jpg" alt="cardimg">
+                <div class="card-body">
+                    <div class="card-cat">Web Design</div>
+                    <h3 class="card-title">po-site</h3>
+                    <p class="card-desc">desc</p>
+                    <a href="#" class="card-link">자세히 보기 -></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- gallery -->
+    <section class="section" id="gallery">
+        <div class="gallery-head">
+            <div class="section-tag">Gallery</div>
+            <h2 class="section-title">title</h2>
+            <p class="section-desc">text</p>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="g-item">
+                <img src="cat.jpg" alt="gimg1">
+            </div>
+            <div class="g-item">
+                <img src="cat.jpg" alt="gimg1">
+            </div>
+            <div class="g-item">
+                <img src="cat.jpg" alt="gimg1">
+            </div>
+            <div class="g-item">
+                <img src="cat.jpg" alt="gimg1">
+            </div>
+            <div class="g-item">
+                <img src="cat.jpg" alt="gimg1">
+            </div>
+            <div class="g-item">
+                <img src="cat.jpg" alt="gimg1">
+            </div>
+            <div class="g-item">
+                <img src="cat.jpg" alt="gimg1">
+            </div>
+            <div class="g-item">
+                <img src="cat.jpg" alt="gimg1">
+            </div>
+        </div>
+    </section>
+
+    <!-- video -->
+    <section id="video">
+        <div class="video-head">
+            <div class="section-tag">text</div>
+            <h2 class="section-title">title</h2>
+            <p class="section-desc">text</p>
+        </div>
+
+        <div class="video-wrap">
+            <div class="ratio-box">
+                <iframe src="https://www.youtube.com/watch?v=uk-eiG2E0uA&list=RDuk-eiG2E0uA&start_radio=1" title="title"
+                    framborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section class="section" id="contact">
+        <div class="contact-inner">
+            <div class="section-tag">Contact</div>
+            <h2 class="section-title">업무제안 언제든 환영 합니다.</h2>
+            <p class="section-desc">아래의 메일로 연락 주세요</p>
+
+            <a href="mailto:gyrfyu@naver.com" class="contact-email">
+                이메일 보내기
+            </a>
+
+            <ul class="sns-list">
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">GitHub</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-inner">
+            <p>text</p>
+            <p>text</p>
+        </div>
+    </footer>
+    <div id="imageModal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImg" />
+        <div id="modalCaption"></div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

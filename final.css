@@ -17,6 +17,7 @@
 html {
     scroll-behavior: smooth;
 }
+/* scroll시 부드럽게 적용해준다. */
 
 body {
     font-family: sans-serif; 
@@ -24,13 +25,16 @@ body {
     color: var(--black);
     line-height: 1.6;
 }
+/* body안에 기본값 설정 */
 
 img {
     display: block; max-width: 100%;
 }
+/* img를 1줄을 가득채우게 하기 위해서 display블락을 주고 가로 최댓값을 100%로 설정 */
 a {
     text-decoration: none; color: inherit;
 }
+/* a의 밑줄을 없앤다.  */
 
 .section {
     padding: 96px 40px;
@@ -40,12 +44,16 @@ a {
     text-transform: uppercase; color: var(--mid);
     margin-bottom: 16px;
 }
+/* uppercase 대문자로 바꾼다. 같이 알아두면 좋은거 lowercase 전부 소문자로 바꾼다. capitalize 단어 첫 글자만 대문자로 바꾼다.
+마진과 패딩의 차이점은 마진은 요소 밖 여백이고 패딩은 요소 안 여백이다. */
 
 .section-title {
     font-size: clamp(1.8rem, 3.5vw, 2.8rem);
     font-weight: 700; letter-spacing: -0.03em;
     line-height: 1.2; margin-bottom: 20px;
 }
+/* font-size: clamp() 함수는 최소값과 최대값 사이에서 자동으로 크기를 조절한다.
+letter-spacing은 글자 간의 간격을 조절한다. line-height는 줄 간격을 조절한다. */
 .section-desc {
     font-size: 1rem; color: #555; max-width: 520px; line-height: 1.8;
 }
@@ -69,6 +77,7 @@ nav {
 .menu {
     display: flex; gap: 26px; list-style: none; 
 }
+/* list-style: none;는 리스트의 기호를 제거한다. */
 .menu a {
     font-size: 0.9rem; transition: color 0.2s; 
     color: #444;
@@ -76,11 +85,13 @@ nav {
 .menu a:hover {
     color: var(--black);
 }
+/* :hover는 마우스를 올렸을 때의 상태를 정의한다. */
 
 .hamburger {
     display: none; flex-direction: column; gap: 5px; background: none;
     border: none; cursor: pointer; padding: 4px;
 }
+/* flex-direction: column;은 요소들을 세로로 배열한다. */
 .hamburger span {
     display: block; width: 22px; height: 1.5px; background: var(--black);
     transition: all 0.3s;
@@ -88,6 +99,7 @@ nav {
 .hamburger.open span:nth-child(1) {
     transform: translateY(6.5px) rotate(45deg);
 }
+/* translateY는 세로 방향으로 이동시키고, rotate(45deg)는 45도 회전시킨다. 따라서 rotate는 회전을 의미한다. */
 .hamburger.open span:nth-child(2) {
     opacity: 0;
 }
